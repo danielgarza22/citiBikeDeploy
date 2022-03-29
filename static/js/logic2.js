@@ -30,7 +30,7 @@ function createMap(highCapStationLayer, lowCapStationLayer)
   let map = L.map("map-id", {
     center: newYorkCoords,
     zoom: 12,
-    layers: [dark, highCapStationLayer]
+    layers: [street, highCapStationLayer]
   });
   // Create a layer control, and pass it baseMaps and overlayMaps. Add the layer control to the map.
   L.control.layers(baseMaps, overLays, {
